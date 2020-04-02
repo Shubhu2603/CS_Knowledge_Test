@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         main_pass=(EditText)findViewById(R.id.Main_password);;
         main_login=(Button)findViewById(R.id.Main_login);
         main_register=(Button)findViewById(R.id.Main_Register);
+        main_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go_to_reg=new Intent(MainActivity.this,Register.class);
+                startActivity(go_to_reg);
+            }
+
+        });
         progressBar=(ProgressBar)findViewById(R.id.progressBar);
         fAuth=FirebaseAuth.getInstance();
         main_login.setOnClickListener(new View.OnClickListener() {
@@ -79,14 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-        main_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent go_to_reg=new Intent(MainActivity.this,Register.class);
-                startActivity(go_to_reg);
-            }
 
-        });
 
     }
 }

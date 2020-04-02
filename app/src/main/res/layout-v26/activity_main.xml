@@ -8,9 +8,9 @@
 
     <EditText
         android:id="@+id/Main_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="36dp"
         android:autofillHints=""
         android:ems="10"
@@ -21,19 +21,21 @@
 
     <Button
         android:id="@+id/Main_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="64dp"
+        android:background="#4EE6E6"
         android:text="@string/login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_password" />
 
     <Button
         android:id="@+id/Main_Register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
         android:layout_marginTop="64dp"
+        android:background="#4EE6E6"
         android:text="@string/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.423"
@@ -45,23 +47,37 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="176dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_password" />
 
     <EditText
         android:id="@+id/main_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="172dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="294dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/test_your_knowledge"
+        android:textColor="#861818"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/main_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
