@@ -12,14 +12,22 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Welcome extends AppCompatActivity {
 
     Button logout;
+    Button profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         logout=(Button)findViewById(R.id.logout);
+        profile=(Button)findViewById(R.id.Welcome_profile);
 
-
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Profile.class));
+            }
+        });
     }
+
 
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();

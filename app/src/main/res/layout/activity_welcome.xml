@@ -12,21 +12,60 @@
         android:layout_height="83dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/aladin"
         android:text="@string/welcome"
+        android:textColor="#861818"
         app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        android:background="#4EE6E6"
+        android:onClick="logout"
         android:text="@string/logout"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome_profile"></Button>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="164dp"
+        android:background="#4EE6E6"
+        android:text="@string/quiz"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome_text"
-        android:onClick="logout"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/Welcome_text" />
+
+    <Button
+        android:id="@+id/Welcome_profile"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#4EE6E6"
+        android:text="@string/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome_text" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#4EE6E6"
+        android:text="@string/results"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
