@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Welcome_profile"></Button>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Quiz"
         android:layout_width="122dp"
         android:layout_height="52dp"
         android:layout_marginStart="60dp"
@@ -67,5 +67,5 @@
         android:background="#4EE6E6"
         android:text="@string/results"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/Quiz" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,5 +18,10 @@
     <string name="results">Results</string>
     <string name="profile">Profile</string>
     <string name="todo">TODO</string>
+    <string name="what_is_this_question">What is this question?</string>
+    <string name="option1">option1</string>
+    <string name="option2">option2</string>
+    <string name="option3">option3</string>
+    <string name="option4">option4</string>
 
 </resources>

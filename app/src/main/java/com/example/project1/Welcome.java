@@ -13,19 +13,30 @@ public class Welcome extends AppCompatActivity {
 
     Button logout;
     Button profile;
+    Button Quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         logout=(Button)findViewById(R.id.logout);
         profile=(Button)findViewById(R.id.Welcome_profile);
+        Quiz=(Button)findViewById(R.id.Quiz);
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Profile.class));
+
             }
         });
+        Quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Question.class));
+
+            }
+        });
+
     }
 
 
