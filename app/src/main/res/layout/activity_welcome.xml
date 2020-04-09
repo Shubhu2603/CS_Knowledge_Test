@@ -30,7 +30,7 @@
         android:background="#4EE6E6"
         android:onClick="logout"
         android:text="@string/logout"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/Results"
         app:layout_constraintTop_toBottomOf="@+id/Welcome_profile"></Button>
 
     <Button
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Welcome_text" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Results"
         android:layout_width="122dp"
         android:layout_height="52dp"
         android:layout_marginStart="60dp"

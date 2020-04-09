@@ -71,7 +71,8 @@ public class Register extends AppCompatActivity {
                 String password=reg_pass.getText().toString().trim();
                 String cpassword=reg_cpass.getText().toString().trim();
                 final String name=reg_user.getText().toString();
-                final String gender_val=((RadioButton)findViewById(reg_gender.getCheckedRadioButtonId())).getText().toString();
+
+                final String a="0";
 
                 if(TextUtils.isEmpty(email))
                 {
@@ -95,6 +96,7 @@ public class Register extends AppCompatActivity {
                 }
                 progressbar.setVisibility(View.VISIBLE);
 
+                final String gender_val=((RadioButton)findViewById(reg_gender.getCheckedRadioButtonId())).getText().toString();
                 //register the user in firebase
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -108,6 +110,7 @@ public class Register extends AppCompatActivity {
                             user.put("Name",name);
                             user.put("Email",email);
                             user.put("Gender",gender_val);
+                            user.put("QuizTaken",a);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

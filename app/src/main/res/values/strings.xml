@@ -23,5 +23,18 @@
     <string name="option2">option2</string>
     <string name="option3">option3</string>
     <string name="option4">option4</string>
+    <string name="total_questions">Total Questions</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="wrong_answers">Wrong Answers</string>
+    <string name="end_quiz">End Quiz</string>
+    <string name="textview">TextView</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="cr">Correct answers</string>
+    <string name="total">Total</string>
+    <string name="val">val</string>
+
+    <string name="average_score">Average Score:</string>
+
 
 </resources>

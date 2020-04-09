@@ -42,8 +42,12 @@ public class Question extends AppCompatActivity {
         if(total>2)
         {
             //Open the result activity
-            startActivity(new Intent(getApplicationContext(),Welcome.class));
-
+            Intent myintent=new Intent(Question.this,Quiz_Result.class);
+            total--;
+            myintent.putExtra("total",String.valueOf(total));
+            myintent.putExtra("correct",String.valueOf(correct));
+            myintent.putExtra("wrong",String.valueOf(wrong));
+            startActivity(myintent);
         }
         else
         {
