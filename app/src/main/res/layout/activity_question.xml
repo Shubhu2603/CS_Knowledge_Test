@@ -4,15 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question">
+    tools:context=".Question"
+    android:background="@drawable/background3">
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="415dp"
-        android:layout_height="123dp"
-        android:text="@string/what_is_this_question"
-        android:textColor="#460B0B"
+        android:layout_width="394dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/input"
+        android:gravity="center|left"
+        android:textColor="#000000"
         android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,11 +24,13 @@
         android:id="@+id/option2"
         android:layout_width="206dp"
         android:layout_height="71dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
-        android:background="#03A9F4"
-        android:text="@string/option2"
+        android:background="@drawable/button"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1" />
 
     <Button
         android:id="@+id/option3"
@@ -32,30 +38,32 @@
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
-        android:background="#03A9F4"
-        android:text="@string/option3"
+        android:background="@drawable/button"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option1" />
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
 
     <Button
         android:id="@+id/option4"
         android:layout_width="206dp"
         android:layout_height="70dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
-        android:background="#03A9F4"
-        android:text="@string/option4"
-        app:layout_constraintStart_toEndOf="@+id/option3"
-        app:layout_constraintTop_toBottomOf="@+id/option2" />
+        android:background="@drawable/button"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option3" />
 
     <Button
         android:id="@+id/option1"
         android:layout_width="201dp"
         android:layout_height="70dp"
-        android:background="#03A9F4"
-        android:text="@string/option1"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question" />
 

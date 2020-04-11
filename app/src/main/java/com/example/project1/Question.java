@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -25,6 +26,7 @@ public class Question extends AppCompatActivity {
     DatabaseReference reference;
     Long endat=100L;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,9 @@ public class Question extends AppCompatActivity {
     }
 
     private void updatequestion(final long l_endat) {
+        final Drawable red=getResources().getDrawable(R.drawable.button_red);
+        final Drawable green=getResources().getDrawable(R.drawable.button_green);
+        final Drawable white=getResources().getDrawable(R.drawable.button);
         total++;
         if(total>2)
         {
@@ -69,13 +74,13 @@ public class Question extends AppCompatActivity {
                         if(o1.getText().toString().equals(quest.getanswer()))
                         {
                             Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
-                            o1.setBackgroundColor(Color.GREEN);
+                            o1.setBackground(green);
                             Handler handler=new Handler();
                             handler.postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
                                     correct++;
-                                    o1.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                    o1.setBackground(white);
                                     updatequestion(endat);
                                 }
                             },1500);
@@ -85,28 +90,28 @@ public class Question extends AppCompatActivity {
                             //answer is wrong
                             Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                             wrong++;
-                            o1.setBackgroundColor(Color.RED);
+                            o1.setBackground(red);
                             if(o2.getText().toString().equals(quest.getanswer()))
                             {
-                                o2.setBackgroundColor(Color.GREEN);
+                                o2.setBackground(green);
                             }
                             else if(o3.getText().toString().equals(quest.getanswer()))
                             {
-                                o3.setBackgroundColor(Color.GREEN);
+                                o3.setBackground(green);
                             }
                             else if(o4.getText().toString().equals(quest.getanswer()))
                             {
-                                o4.setBackgroundColor(Color.GREEN);
+                                o4.setBackground(green);
                             }
 
                             Handler handler=new Handler();
                             handler.postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    o1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                    o2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                    o3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                    o4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                    o1.setBackground(white);
+                                    o2.setBackground(white);
+                                    o3.setBackground(white);
+                                    o4.setBackground(white);
                                     updatequestion(endat);
 
                                 }
@@ -123,13 +128,13 @@ public class Question extends AppCompatActivity {
                             if(o2.getText().toString().equals(quest.getanswer()))
                             {
                                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
-                                o2.setBackgroundColor(Color.GREEN);
+                                o2.setBackground(green);
                                 Handler handler=new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        o2.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        o2.setBackground(white);
                                         updatequestion(endat);
                                     }
                                 },1500);
@@ -139,28 +144,28 @@ public class Question extends AppCompatActivity {
                                 //answer is wrong
                                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                o2.setBackgroundColor(Color.RED);
+                                o2.setBackground(red);
                                 if(o1.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o1.setBackgroundColor(Color.GREEN);
+                                    o1.setBackground(green);
                                 }
                                 else if(o3.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o3.setBackgroundColor(Color.GREEN);
+                                    o3.setBackground(green);
                                 }
                                 else if(o4.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o4.setBackgroundColor(Color.GREEN);
+                                    o4.setBackground(green);
                                 }
 
                                 Handler handler=new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        o1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        o1.setBackground(white);
+                                        o2.setBackground(white);
+                                        o3.setBackground(white);
+                                        o4.setBackground(white);
                                         updatequestion(endat);
 
                                     }
@@ -176,13 +181,13 @@ public class Question extends AppCompatActivity {
                             if(o3.getText().toString().equals(quest.getanswer()))
                             {
                                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
-                                o3.setBackgroundColor(Color.GREEN);
+                                o3.setBackground(green);
                                 Handler handler=new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        o3.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        o3.setBackground(white);
                                         updatequestion(endat);
                                     }
                                 },1500);
@@ -192,28 +197,28 @@ public class Question extends AppCompatActivity {
                                 //answer is wrong
                                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                o3.setBackgroundColor(Color.RED);
+                                o3.setBackground(red);
                                 if(o2.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o2.setBackgroundColor(Color.GREEN);
+                                    o2.setBackground(green);
                                 }
-                                else if(o3.getText().toString().equals(quest.getanswer()))
+                                else if(o1.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o1.setBackgroundColor(Color.GREEN);
+                                    o1.setBackground(green);
                                 }
                                 else if(o4.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o4.setBackgroundColor(Color.GREEN);
+                                    o4.setBackground(green);
                                 }
 
                                 Handler handler=new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        o1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        o1.setBackground(white);
+                                        o2.setBackground(white);
+                                        o3.setBackground(white);
+                                        o4.setBackground(white);
                                         updatequestion(endat);
 
                                     }
@@ -229,13 +234,13 @@ public class Question extends AppCompatActivity {
                             if(o4.getText().toString().equals(quest.getanswer()))
                             {
                                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
-                                o4.setBackgroundColor(Color.GREEN);
+                                o4.setBackground(green);
                                 Handler handler=new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        o4.setBackgroundColor(Color.parseColor("03A9F4"));
+                                        o4.setBackground(white);
                                         updatequestion(endat);
                                     }
                                 },1500);
@@ -245,28 +250,28 @@ public class Question extends AppCompatActivity {
                                 //answer is wrong
                                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                                 wrong++;
-                                o4.setBackgroundColor(Color.RED);
+                                o4.setBackground(red);
                                 if(o2.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o2.setBackgroundColor(Color.GREEN);
+                                    o2.setBackground(green);
                                 }
                                 else if(o3.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o3.setBackgroundColor(Color.GREEN);
+                                    o3.setBackground(green);
                                 }
                                 else if(o4.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o1.setBackgroundColor(Color.GREEN);
+                                    o4.setBackground(green);
                                 }
 
                                 Handler handler=new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        o1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        o4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        o1.setBackground(white);
+                                        o2.setBackground(white);
+                                        o3.setBackground(white);
+                                        o4.setBackground(white);
                                         updatequestion(endat);
 
                                     }

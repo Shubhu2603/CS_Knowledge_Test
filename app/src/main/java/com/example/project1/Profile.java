@@ -2,6 +2,7 @@ package com.example.project1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -20,7 +21,7 @@ import javax.annotation.Nullable;
 public class Profile extends AppCompatActivity {
 
     TextView profile_name1,profile_email1;
-    ImageView pic_male,pic_female;
+    ImageView pic_male,pic_female,back;
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
     String UserID,gen;
@@ -34,6 +35,7 @@ public class Profile extends AppCompatActivity {
         pic_male=(ImageView)findViewById(R.id.pic_male);
         pic_female=(ImageView)findViewById(R.id.pic_female);
         fAuth=FirebaseAuth.getInstance();
+        back=(ImageView)findViewById(R.id.backp);
         fStore=FirebaseFirestore.getInstance();
         UserID=fAuth.getCurrentUser().getUid();
         DocumentReference documentReference=fStore.collection("Users").document(UserID);
@@ -51,6 +53,13 @@ public class Profile extends AppCompatActivity {
                 {
                     pic_female.setVisibility(View.VISIBLE);
                 }
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Welcome.class));
             }
         });
     }

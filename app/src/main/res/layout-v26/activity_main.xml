@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background1">
 
     <EditText
         android:id="@+id/Main_password"
         android:layout_width="250dp"
         android:layout_height="59dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
         android:autofillHints=""
+        android:background="@drawable/input"
         android:ems="10"
         android:hint="@string/enter_password"
         android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#FF7A7A7A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_email" />
 
@@ -23,10 +27,11 @@
         android:id="@+id/Main_login"
         android:layout_width="122dp"
         android:layout_height="52dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="64dp"
-        android:background="#4EE6E6"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
         android:text="@string/login"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_password" />
 
@@ -34,11 +39,11 @@
         android:id="@+id/Main_Register"
         android:layout_width="122dp"
         android:layout_height="52dp"
-        android:layout_marginTop="64dp"
-        android:background="#4EE6E6"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
         android:text="@string/register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
+        android:textColor="#000000"
         app:layout_constraintStart_toEndOf="@+id/Main_login"
         app:layout_constraintTop_toBottomOf="@+id/Main_password" />
 
@@ -47,8 +52,8 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="128dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_password" />
@@ -57,27 +62,43 @@
         android:id="@+id/main_email"
         android:layout_width="250dp"
         android:layout_height="59dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="196dp"
         android:autofillHints=""
+        android:background="@drawable/input"
         android:ems="10"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
+        android:textColor="@color/grey"
+        android:textColorHint="#7A7A7A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="294dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="60dp"
-        android:fontFamily="@font/aladin"
-        android:text="@string/test_your_knowledge"
-        android:textColor="#861818"
+        android:layout_width="382dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif"
+        android:text="Test your knowledge !"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal|bold"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/main_email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="229dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Show your skills!"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

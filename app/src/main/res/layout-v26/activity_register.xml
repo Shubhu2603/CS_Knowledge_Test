@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".Register"
+    android:background="@drawable/background1">
 
     <EditText
         android:id="@+id/reg_user"
         android:layout_width="250dp"
         android:layout_height="59dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="68dp"
         android:autofillHints=""
+        android:background="@drawable/input"
         android:ems="10"
         android:hint="@string/enter_name"
         android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#FF7A7A7A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,9 +30,12 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:autofillHints=""
+        android:background="@drawable/input"
         android:ems="10"
         android:hint="@string/enter_password"
         android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#FF7A7A7A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_user" />
 
@@ -39,9 +46,12 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:autofillHints=""
+        android:background="@drawable/input"
         android:ems="10"
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#FF7A7A7A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_pass" />
 
@@ -52,16 +62,19 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:autofillHints=""
+        android:background="@drawable/input"
         android:ems="10"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#FF7A7A7A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_cpass" />
 
     <RadioGroup
         android:id="@+id/Gender"
-        android:layout_width="208dp"
-        android:layout_height="91dp"
+        android:layout_width="214dp"
+        android:layout_height="69dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,23 +84,26 @@
             android:id="@+id/Male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/male" />
+            android:text="@string/male"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/Female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/female" />
+            android:text="@string/female"
+            android:textColor="#FFFFFF" />
     </RadioGroup>
 
     <Button
         android:id="@+id/reg_reg"
         android:layout_width="122dp"
         android:layout_height="52dp"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="32dp"
-        android:background="#4EE6E6"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
         android:text="@string/register"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Gender" />
 
@@ -96,22 +112,22 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Gender" />
 
     <TextView
         android:id="@+id/click_to_log"
-        android:layout_width="341dp"
-        android:layout_height="25dp"
+        android:layout_width="330dp"
+        android:layout_height="38dp"
         android:text="@string/already_have_an_account_click_here_to_login"
-        android:textColor="#633030"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_reg"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.092" />
 </androidx.constraintlayout.widget.ConstraintLayout>

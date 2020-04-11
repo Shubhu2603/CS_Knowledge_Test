@@ -6,24 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Welcome extends AppCompatActivity {
 
-    Button logout;
-    Button profile;
-    Button Quiz;
-    Button Result;
+
+    ImageView logout,profile,Quiz,Result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        logout=(Button)findViewById(R.id.logout);
-        profile=(Button)findViewById(R.id.Welcome_profile);
-        Quiz=(Button)findViewById(R.id.Quiz);
-        Result=(Button)findViewById(R.id.Results);
+        logout=(ImageView) findViewById(R.id.logout);
+        profile=(ImageView) findViewById(R.id.user);
+        Quiz=(ImageView) findViewById(R.id.quiz);
+        Result=(ImageView) findViewById(R.id.stats);
+
+
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,14 +47,22 @@ public class Welcome extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Final_Result.class));
             }
         });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Toast.makeText(Welcome.this, "Logged Out!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                finish();
+            }
+        });
+
+
+
     }
 
 
-    public void logout(View view) {
-        FirebaseAuth.getInstance().signOut();
-        Toast.makeText(this, "Logged Out", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-        finish();
 
     }
-}
+

@@ -3,7 +3,10 @@ package com.example.project1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +24,7 @@ import javax.annotation.Nullable;
 public class Final_Result extends AppCompatActivity {
 
     TextView date,time,correct,wrong,total,averg;
+    ImageView back;
     String Uid;
     int t,t1;
     float avg,total1=0;
@@ -37,6 +41,7 @@ public class Final_Result extends AppCompatActivity {
         total=(TextView)findViewById(R.id.Total);
         time=(TextView)findViewById(R.id.Time);
         averg=(TextView)findViewById(R.id.Average);
+        back=(ImageView)findViewById(R.id.backr);
 
         fAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
@@ -80,7 +85,12 @@ public class Final_Result extends AppCompatActivity {
                 }
             }
         });
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Welcome.class));
+            }
+        });
 
         }
     }

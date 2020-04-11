@@ -35,6 +35,9 @@
     <string name="val">val</string>
 
     <string name="average_score">Average Score:</string>
+    <string name="user">user</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="welcome_back">Welcome Back</string>
 
 
 </resources>

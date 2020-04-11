@@ -4,68 +4,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Welcome">
+    tools:context=".Welcome"
+    android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/stats"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:srcCompat="@drawable/logoutf" />
+
+    <ImageView
+        android:id="@+id/quiz"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="176dp"
+        android:contentDescription="@string/quiz"
+        app:layout_constraintEnd_toStartOf="@+id/user"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quizf" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="166dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:contentDescription="@string/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userf" />
+
+    <ImageView
+        android:id="@+id/stats"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/results"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz"
+        app:srcCompat="@drawable/statsf" />
 
     <TextView
-        android:id="@+id/Welcome_text"
-        android:layout_width="174dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginTop="56dp"
-        android:fontFamily="@font/aladin"
-        android:text="@string/welcome"
-        android:textColor="#861818"
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/quiz"
+        android:textColor="#858585"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/quiz"
+        app:layout_constraintEnd_toEndOf="@+id/quiz"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/quiz" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/profile"
+        android:textColor="#858585"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/user" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="222dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/dashboard"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dashboard" />
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="122dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="40dp"
-        android:background="#4EE6E6"
-        android:onClick="logout"
-        android:text="@string/logout"
-        app:layout_constraintStart_toEndOf="@+id/Results"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome_profile"></Button>
-
-    <Button
-        android:id="@+id/Quiz"
-        android:layout_width="122dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="164dp"
-        android:background="#4EE6E6"
-        android:text="@string/quiz"
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="136dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/welcome_back"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome_text" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:text="Welcome back" />
 
-    <Button
-        android:id="@+id/Welcome_profile"
-        android:layout_width="122dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:background="#4EE6E6"
-        android:text="@string/profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome_text" />
-
-    <Button
-        android:id="@+id/Results"
-        android:layout_width="122dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="40dp"
-        android:background="#4EE6E6"
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comicsans"
         android:text="@string/results"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Quiz" />
+        android:textColor="#858585"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/stats"
+        app:layout_constraintEnd_toEndOf="@+id/stats"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/stats" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/logout"
+        android:textColor="#858585"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="@+id/logout"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/logout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
