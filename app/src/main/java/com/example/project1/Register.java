@@ -110,7 +110,25 @@ public class Register extends AppCompatActivity {
                             user.put("Name",name);
                             user.put("Email",email);
                             user.put("Gender",gender_val);
-                            user.put("QuizTaken",a);
+                            user.put("c",a);
+                            user.put("cpp",a);
+                            user.put("java",a);
+                            user.put("python",a);
+                            user.put("html",a);
+                            user.put("css",a);
+                            user.put("js",a);
+                            user.put("networking",a);
+                            user.put("security",a);
+                            user.put("sqlite",a);
+                            user.put("mysql",a);
+                            user.put("mangodb",a);
+                            user.put("oracle",a);
+                            user.put("aws",a);
+                            user.put("gcloud",a);
+                            user.put("ibmcloud",a);
+                            user.put("azure",a);
+                            user.put("AI",a);
+                            user.put("IOT",a);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

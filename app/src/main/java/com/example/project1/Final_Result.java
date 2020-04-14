@@ -26,6 +26,7 @@ public class Final_Result extends AppCompatActivity {
     TextView date,time,correct,wrong,total,averg;
     ImageView back;
     String Uid;
+    String res_cat;
     int t,t1;
     float avg,total1=0;
     FirebaseAuth fAuth;
@@ -45,21 +46,22 @@ public class Final_Result extends AppCompatActivity {
 
         fAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
-
-        Uid=fAuth.getCurrentUser().getUid();
-        final DocumentReference dr=fStore.collection("Users").document(Uid);
+        Intent i=getIntent();
+        res_cat=i.getStringExtra("act");
+        Uid = fAuth.getCurrentUser().getUid();
+        final DocumentReference dr = fStore.collection("Users").document(Uid);
         dr.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
                     DocumentSnapshot document = task.getResult();
-                    t = Integer.parseInt(document.getString("QuizTaken"));
-                         //  Toast.makeText(Final_Result.this, String.valueOf(t), Toast.LENGTH_SHORT).show();
+                    t = Integer.parseInt(document.getString(res_cat));
+                    //  Toast.makeText(Final_Result.this, String.valueOf(t), Toast.LENGTH_SHORT).show();
 
                     for (int i = 1; i <= t; i++) {
-                        Toast.makeText(Final_Result.this,"Report Generated!", Toast.LENGTH_SHORT).show();
-                        String win=String.valueOf(i);
-                        DocumentReference documentReference = fStore.collection("Users").document(Uid).collection("Quiz_History").document(win);
+                        Toast.makeText(Final_Result.this, res_cat, Toast.LENGTH_SHORT).show();
+                        String win = String.valueOf(i);
+                        DocumentReference documentReference = fStore.collection("Users").document(Uid).collection(res_cat).document(win);
                         documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                             @Override
                             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -70,18 +72,15 @@ public class Final_Result extends AppCompatActivity {
                                     correct.append("\n" + doc.getString("Correct"));
                                     wrong.append("\n" + doc.getString("Wrong"));
                                     total1 += Integer.parseInt(doc.getString("Correct"));
-                                    total.append("\n"+String.valueOf((Float.parseFloat(doc.getString("Correct"))/ 2) * 100) + "%");
+                                    total.append("\n" + String.valueOf((Float.parseFloat(doc.getString("Correct")) / 20) * 100) + "%");
 
-                                    avg = ((total1 / t)/2)*100;
-                                    averg.setText(String.valueOf(avg)+"%");
+                                    avg = ((total1 / t) / 20) * 100;
+                                    averg.setText(String.valueOf(avg) + "%");
                                 }
                             }
 
                         });
                     }
-
-
-
                 }
             }
         });

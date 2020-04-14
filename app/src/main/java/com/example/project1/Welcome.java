@@ -36,7 +36,7 @@ public class Welcome extends AppCompatActivity {
         Quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Question.class));
+                startActivity(new Intent(getApplicationContext(),Category_choice.class));
 
             }
         });
@@ -44,7 +44,7 @@ public class Welcome extends AppCompatActivity {
         Result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Final_Result.class));
+                startActivity(new Intent(getApplicationContext(),category_result.class));
             }
         });
 

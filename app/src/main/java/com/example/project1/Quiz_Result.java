@@ -55,6 +55,7 @@ public class Quiz_Result extends AppCompatActivity {
         final String ques=i.getStringExtra("total");
         final String corr=i.getStringExtra("correct");
         final String wron=i.getStringExtra("wrong");
+        final String quiz_name=i.getStringExtra("quiz");
 
 
 
@@ -73,7 +74,7 @@ public class Quiz_Result extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     DocumentSnapshot document=task.getResult();
-                    quiza=document.getString("QuizTaken");
+                    quiza=document.getString(quiz_name);
 
 
                     //Toast.makeText(Quiz_Result.this, quiza, Toast.LENGTH_SHORT).show();;
@@ -89,7 +90,7 @@ public class Quiz_Result extends AppCompatActivity {
                     ;
                     qu=String.valueOf(q1);
                     DocumentReference d=fStore.collection("Users").document(UID);
-                    d.update("QuizTaken",qu).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    d.update(quiz_name,qu).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()) {
@@ -102,7 +103,7 @@ public class Quiz_Result extends AppCompatActivity {
                         }
                     });
                     qu=String.valueOf(q1);
-                    DocumentReference documentReference=fStore.collection("Users").document(UID).collection("Quiz_History").document(qu);
+                    DocumentReference documentReference=fStore.collection("Users").document(UID).collection(quiz_name).document(qu);
                     Map<String,Object> quizr=new HashMap<>();
                     quizr.put("Date",currentDate);
                     quizr.put("Time",currentTime);

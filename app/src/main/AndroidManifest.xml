@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Final_Result"></activity>
+        <activity android:name=".category_result"></activity>
+        <activity android:name=".trend_of_the_generation" />
+        <activity android:name=".cloud_computing" />
+        <activity android:name=".Databases" />
+        <activity android:name=".networking_and_security" />
+        <activity android:name=".front_end" />
+        <activity android:name=".programming_languages" />
+        <activity android:name=".Category_choice" />
+        <activity android:name=".Final_Result" />
         <activity android:name=".Quiz_Result" />
         <activity android:name=".Question" />
         <activity android:name=".Profile" />

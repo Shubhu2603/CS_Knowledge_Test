@@ -16,6 +16,7 @@
         android:autofillHints=""
         android:background="@drawable/input"
         android:ems="10"
+        android:fontFamily="@font/nunito_sans_extralight"
         android:hint="@string/enter_name"
         android:inputType="textPersonName"
         android:textColor="#000000"
@@ -32,6 +33,7 @@
         android:autofillHints=""
         android:background="@drawable/input"
         android:ems="10"
+        android:fontFamily="@font/nunito_sans_extralight"
         android:hint="@string/enter_password"
         android:inputType="textPassword"
         android:textColor="#000000"
@@ -48,6 +50,7 @@
         android:autofillHints=""
         android:background="@drawable/input"
         android:ems="10"
+        android:fontFamily="@font/nunito_sans_extralight"
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
         android:textColor="#000000"
@@ -64,6 +67,7 @@
         android:autofillHints=""
         android:background="@drawable/input"
         android:ems="10"
+        android:fontFamily="@font/nunito_sans_extralight"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
         android:textColor="#000000"
@@ -84,6 +88,7 @@
             android:id="@+id/Male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_extralight"
             android:text="@string/male"
             android:textColor="#FFFFFF" />
 
@@ -91,6 +96,7 @@
             android:id="@+id/Female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_extralight"
             android:text="@string/female"
             android:textColor="#FFFFFF" />
     </RadioGroup>

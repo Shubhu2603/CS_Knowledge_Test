@@ -19,12 +19,16 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Random;
+
 public class Question extends AppCompatActivity {
     Button o1,o2,o3,o4;
     TextView question;
     int total=0,correct=0,wrong=0;
     DatabaseReference reference;
     Long endat=100L;
+    String cat;
+    int[] arr=new int[20];
 
 
     @Override
@@ -35,16 +39,36 @@ public class Question extends AppCompatActivity {
         o2=(Button)findViewById(R.id.option2);
         o3=(Button)findViewById(R.id.option3);
         o4=(Button)findViewById(R.id.option4);
+        for(int i=0;i<20;i++)
+        {
+            arr[i]=i+1;
+        }
+        arr=RandomizeArray(arr);
         question=(TextView)findViewById(R.id.question);
         updatequestion(endat);
     }
 
+    public static int[] RandomizeArray(int[] array){
+        Random rgen = new Random();  // Random number generator
+
+        for (int i=0; i<array.length; i++) {
+            int randomPosition = rgen.nextInt(array.length);
+            int temp = array[i];
+            array[i] = array[randomPosition];
+            array[randomPosition] = temp;
+        }
+
+        return array;
+    }
+
     private void updatequestion(final long l_endat) {
+        Intent i=getIntent();
+        cat=i.getStringExtra("act");
         final Drawable red=getResources().getDrawable(R.drawable.button_red);
         final Drawable green=getResources().getDrawable(R.drawable.button_green);
         final Drawable white=getResources().getDrawable(R.drawable.button);
         total++;
-        if(total>2)
+        if(total>20)
         {
             //Open the result activity
             Intent myintent=new Intent(Question.this,Quiz_Result.class);
@@ -52,12 +76,14 @@ public class Question extends AppCompatActivity {
             myintent.putExtra("total",String.valueOf(total));
             myintent.putExtra("correct",String.valueOf(correct));
             myintent.putExtra("wrong",String.valueOf(wrong));
+            myintent.putExtra("quiz",String.valueOf(cat));
             startActivity(myintent);
         }
         else
         {
             FirebaseDatabase.getInstance();//.setPersistenceEnabled(true);
-            reference= FirebaseDatabase.getInstance().getReference().child("Questions").child(String.valueOf(total));//.endAt(l_endat).limitToLast(1);
+
+            reference= FirebaseDatabase.getInstance().getReference().child(cat).child(String.valueOf(arr[total-1]));//.endAt(l_endat).limitToLast(1);
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -259,9 +285,9 @@ public class Question extends AppCompatActivity {
                                 {
                                     o3.setBackground(green);
                                 }
-                                else if(o4.getText().toString().equals(quest.getanswer()))
+                                else if(o1.getText().toString().equals(quest.getanswer()))
                                 {
-                                    o4.setBackground(green);
+                                    o1.setBackground(green);
                                 }
 
                                 Handler handler=new Handler();
