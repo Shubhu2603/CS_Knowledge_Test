@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Databases"
+    android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@+id/backc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/mongodb"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqlite"
+        app:srcCompat="@drawable/mongodb" />
+
+    <ImageView
+        android:id="@+id/oracle"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mysql"
+        app:srcCompat="@drawable/oracledb" />
+
+    <ImageView
+        android:id="@+id/sqlite"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sqlite" />
+
+    <ImageView
+        android:id="@+id/mysql"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mysql" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

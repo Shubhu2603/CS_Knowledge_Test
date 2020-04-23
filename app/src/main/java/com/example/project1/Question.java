@@ -97,7 +97,7 @@ public class Question extends AppCompatActivity {
                 o1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(o1.getText().toString().equals(quest.getanswer()))
+                        if(o1.getText().toString().trim().equals(quest.getanswer().trim()))
                         {
                             Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
                             o1.setBackground(green);
@@ -117,15 +117,15 @@ public class Question extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                             wrong++;
                             o1.setBackground(red);
-                            if(o2.getText().toString().equals(quest.getanswer()))
+                            if(o2.getText().toString().trim().equals(quest.getanswer().trim()))
                             {
                                 o2.setBackground(green);
                             }
-                            else if(o3.getText().toString().equals(quest.getanswer()))
+                            else if(o3.getText().toString().trim().equals(quest.getanswer().trim()))
                             {
                                 o3.setBackground(green);
                             }
-                            else if(o4.getText().toString().equals(quest.getanswer()))
+                            else if(o4.getText().toString().trim().equals(quest.getanswer().trim()))
                             {
                                 o4.setBackground(green);
                             }
@@ -151,7 +151,7 @@ public class Question extends AppCompatActivity {
                 o2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if(o2.getText().toString().equals(quest.getanswer()))
+                            if(o2.getText().toString().trim().equals(quest.getanswer().trim()))
                             {
                                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
                                 o2.setBackground(green);
@@ -171,15 +171,15 @@ public class Question extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 o2.setBackground(red);
-                                if(o1.getText().toString().equals(quest.getanswer()))
+                                if(o1.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o1.setBackground(green);
                                 }
-                                else if(o3.getText().toString().equals(quest.getanswer()))
+                                else if(o3.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o3.setBackground(green);
                                 }
-                                else if(o4.getText().toString().equals(quest.getanswer()))
+                                else if(o4.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o4.setBackground(green);
                                 }
@@ -204,7 +204,7 @@ public class Question extends AppCompatActivity {
                     o3.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if(o3.getText().toString().equals(quest.getanswer()))
+                            if(o3.getText().toString().trim().equals(quest.getanswer().trim()))
                             {
                                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
                                 o3.setBackground(green);
@@ -224,15 +224,15 @@ public class Question extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 o3.setBackground(red);
-                                if(o2.getText().toString().equals(quest.getanswer()))
+                                if(o2.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o2.setBackground(green);
                                 }
-                                else if(o1.getText().toString().equals(quest.getanswer()))
+                                else if(o1.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o1.setBackground(green);
                                 }
-                                else if(o4.getText().toString().equals(quest.getanswer()))
+                                else if(o4.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o4.setBackground(green);
                                 }
@@ -257,7 +257,7 @@ public class Question extends AppCompatActivity {
                     o4.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if(o4.getText().toString().equals(quest.getanswer()))
+                            if(o4.getText().toString().trim().equals(quest.getanswer().trim()))
                             {
                                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
                                 o4.setBackground(green);
@@ -277,15 +277,15 @@ public class Question extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
                                 wrong++;
                                 o4.setBackground(red);
-                                if(o2.getText().toString().equals(quest.getanswer()))
+                                if(o2.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o2.setBackground(green);
                                 }
-                                else if(o3.getText().toString().equals(quest.getanswer()))
+                                else if(o3.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o3.setBackground(green);
                                 }
-                                else if(o1.getText().toString().equals(quest.getanswer()))
+                                else if(o1.getText().toString().trim().equals(quest.getanswer().trim()))
                                 {
                                     o1.setBackground(green);
                                 }

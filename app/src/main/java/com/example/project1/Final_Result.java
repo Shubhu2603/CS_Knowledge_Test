@@ -59,7 +59,6 @@ public class Final_Result extends AppCompatActivity {
                     //  Toast.makeText(Final_Result.this, String.valueOf(t), Toast.LENGTH_SHORT).show();
 
                     for (int i = 1; i <= t; i++) {
-                        Toast.makeText(Final_Result.this, res_cat, Toast.LENGTH_SHORT).show();
                         String win = String.valueOf(i);
                         DocumentReference documentReference = fStore.collection("Users").document(Uid).collection(res_cat).document(win);
                         documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

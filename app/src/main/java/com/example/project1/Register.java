@@ -121,7 +121,7 @@ public class Register extends AppCompatActivity {
                             user.put("security",a);
                             user.put("sqlite",a);
                             user.put("mysql",a);
-                            user.put("mangodb",a);
+                            user.put("mongodb",a);
                             user.put("oracle",a);
                             user.put("aws",a);
                             user.put("gcloud",a);
