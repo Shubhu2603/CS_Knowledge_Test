@@ -66,11 +66,12 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nunito_sans_extralight"
         android:text="@string/quiz"
-        android:textColor="#373938"
+        android:textColor="@color/red"
+        android:textColorHighlight="#FFFFFF"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/quiz"
         app:layout_constraintEnd_toEndOf="@+id/quiz"
-        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/quiz" />
 
     <TextView
@@ -80,12 +81,12 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nunito_sans_extralight"
         android:text="@string/profile"
-        android:textColor="#373938"
+        android:textColor="@color/red"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/user"
         app:layout_constraintEnd_toEndOf="@+id/user"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/user" />
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView15"
@@ -127,7 +128,7 @@
         android:layout_marginBottom="21dp"
         android:fontFamily="@font/nunito_sans_extralight"
         android:text="@string/results"
-        android:textColor="#373938"
+        android:textColor="@color/red"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/stats"
         app:layout_constraintEnd_toEndOf="@+id/stats"
@@ -140,11 +141,12 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nunito_sans_extralight"
         android:text="@string/logout"
-        android:textColor="#373938"
+        android:textColor="@color/red"
+        android:textColorHighlight="@color/red"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="@+id/logout"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="@+id/logout" />
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toEndOf="@+id/textView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

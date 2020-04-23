@@ -30,9 +30,12 @@ public class trend_of_the_generation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trend_of_the_generation);
 
+        fStore=FirebaseFirestore.getInstance();
+        fAuth=FirebaseAuth.getInstance();
         AI = (ImageView) findViewById(R.id.AI);
         IOT = (ImageView) findViewById(R.id.IOT);
         back=(ImageView) findViewById(R.id.backp3);
+        UID=fAuth.getCurrentUser().getUid();
 
         Intent i = getIntent();
         if (i.getStringExtra("result").equals("no")) {

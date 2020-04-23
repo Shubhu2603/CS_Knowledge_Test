@@ -29,9 +29,12 @@ public class networking_and_security extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_networking_and_security);
 
+        fStore=FirebaseFirestore.getInstance();
+        fAuth=FirebaseAuth.getInstance();
         security = (ImageView) findViewById(R.id.security);
         networking = (ImageView) findViewById(R.id.networking);
         back=(ImageView)findViewById(R.id.backc6);
+        UID=fAuth.getCurrentUser().getUid();
 
         Intent i = getIntent();
         if (i.getStringExtra("result").equals("no")) {
