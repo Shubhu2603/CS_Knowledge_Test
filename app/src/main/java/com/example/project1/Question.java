@@ -316,4 +316,8 @@ public class Question extends AppCompatActivity {
             });
         }
     }
+    public void onBackPressed()
+    {
+
+    }
 }

@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //super.onBackPressed();
         setContentView(R.layout.activity_main);
 
         main_email=(EditText)findViewById(R.id.main_email);
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         {
                             Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),Welcome.class));
+                           // finish();
                         }
                         else
                         {
@@ -88,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
+   public void onBackPressed()
+   {
+
+   }
+
 }

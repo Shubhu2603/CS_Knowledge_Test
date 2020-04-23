@@ -134,4 +134,7 @@ public class Quiz_Result extends AppCompatActivity {
 
 
     }
+    public  void onBackPressed()
+    {}
+
 }
