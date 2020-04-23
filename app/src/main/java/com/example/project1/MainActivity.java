@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import static android.app.PendingIntent.getActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     public EditText main_email,main_pass;
@@ -91,9 +93,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-   public void onBackPressed()
-   {
-
+   public void onBackPressed() {
+       moveTaskToBack(true);
+       android.os.Process.killProcess(android.os.Process.myPid());
+       System.exit(1);
    }
-
 }
