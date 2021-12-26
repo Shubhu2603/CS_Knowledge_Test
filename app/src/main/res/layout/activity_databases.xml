@@ -15,6 +15,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/welcome"
+        android:foreground="?android:selectableItemBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
@@ -26,6 +27,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:foreground="?android:selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sqlite"
         app:srcCompat="@drawable/mongodb" />
@@ -37,6 +39,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="48dp"
+        android:foreground="?android:selectableItemBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mysql"
         app:srcCompat="@drawable/oracledb" />
@@ -48,6 +51,7 @@
         android:layout_marginTop="152dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:foreground="?android:selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sqlite" />
@@ -59,6 +63,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="152dp"
+        android:foreground="?android:selectableItemBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mysql" />

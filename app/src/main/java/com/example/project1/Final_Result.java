@@ -71,10 +71,10 @@ public class Final_Result extends AppCompatActivity {
                                     correct.append("\n" + doc.getString("Correct"));
                                     wrong.append("\n" + doc.getString("Wrong"));
                                     total1 += Integer.parseInt(doc.getString("Correct"));
-                                    total.append("\n" + String.valueOf((Float.parseFloat(doc.getString("Correct")) / 20) * 100) + "%");
+                                    total.append("\n" + String.format("%.2f",(Float.parseFloat(doc.getString("Correct")) / 20) * 100) + "%");
 
                                     avg = ((total1 / t) / 20) * 100;
-                                    averg.setText(String.valueOf(avg) + "%");
+                                    averg.setText(String.format("%.2f",avg) + "%");
                                 }
                             }
 
