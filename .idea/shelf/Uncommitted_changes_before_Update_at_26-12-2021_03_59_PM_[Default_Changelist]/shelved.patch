@@ -1,0 +1,973 @@
+Index: .idea/runConfigurations.xml
+===================================================================
+diff --git a/.idea/runConfigurations.xml b/.idea/runConfigurations.xml
+deleted file mode 100644
+--- a/.idea/runConfigurations.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ /dev/null	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RunConfigurationProducerService">
+-    <option name="ignoredProducers">
+-      <set>
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
+-      </set>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: app/src/main/res/drawable-v24/ic_launcher_background.xml
+===================================================================
+diff --git a/app/src/main/res/drawable-v24/ic_launcher_background.xml b/app/src/main/res/drawable-v24/ic_launcher_background.xml
+deleted file mode 100644
+--- a/app/src/main/res/drawable-v24/ic_launcher_background.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ /dev/null	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
+@@ -1,34 +0,0 @@
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:aapt="http://schemas.android.com/aapt"
+-    android:width="108dp"
+-    android:height="108dp"
+-    android:viewportWidth="5400"
+-    android:viewportHeight="5400">
+-  <group android:translateX="2646"
+-      android:translateY="2646">
+-      <path
+-          android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
+-          <aapt:attr name="android:fillColor">
+-              <gradient
+-                  android:startY="49.59793"
+-                  android:startX="42.9492"
+-                  android:endY="92.4963"
+-                  android:endX="85.84757"
+-                  android:type="linear">
+-                  <item
+-                      android:color="#44000000"
+-                      android:offset="0.0" />
+-                  <item
+-                      android:color="#00000000"
+-                      android:offset="1.0" />
+-              </gradient>
+-          </aapt:attr>
+-      </path>
+-      <path
+-          android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
+-          android:fillColor="#FFFFFF"
+-          android:fillType="nonZero"
+-          android:strokeWidth="1"
+-          android:strokeColor="#00000000"/>
+-  </group>
+-</vector>
+\ No newline at end of file
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\">\r\n    <background android:drawable=\"@drawable/ic_launcher_background\"/>\r\n    <foreground android:drawable=\"@mipmap/ic_launcher_foreground\"/>\r\n</adaptive-icon>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml b/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+--- a/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1629403633835)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background"/>
++    <background android:drawable="@color/ic_launcher_background"/>
+     <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+ </adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/values/ic_launcher_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"ic_launcher_background\">#D6DCDB</color>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/ic_launcher_background.xml b/app/src/main/res/values/ic_launcher_background.xml
+--- a/app/src/main/res/values/ic_launcher_background.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/values/ic_launcher_background.xml	(date 1629403633837)
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+-    <color name="ic_launcher_background">#D6DCDB</color>
++    <color name="ic_launcher_background">#F9F9F9</color>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_question.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Question\"\r\n    android:background=\"@drawable/background3\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/question\"\r\n        android:layout_width=\"394dp\"\r\n        android:layout_height=\"124dp\"\r\n        android:layout_marginTop=\"64dp\"\r\n        android:background=\"@drawable/input\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:gravity=\"center|left\"\r\n        android:textColor=\"#000000\"\r\n        android:textSize=\"28sp\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/option2\"\r\n        android:layout_width=\"206dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"20dp\"\r\n        android:layout_weight=\"1\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/option1\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/option3\"\r\n        android:layout_width=\"201dp\"\r\n        android:layout_height=\"70dp\"\r\n        android:layout_marginTop=\"20dp\"\r\n        android:layout_weight=\"1\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/option2\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/option4\"\r\n        android:layout_width=\"206dp\"\r\n        android:layout_height=\"70dp\"\r\n        android:layout_marginTop=\"20dp\"\r\n        android:layout_weight=\"1\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/option3\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/option1\"\r\n        android:layout_width=\"201dp\"\r\n        android:layout_height=\"70dp\"\r\n        android:layout_marginTop=\"24dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/question\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_question.xml b/app/src/main/res/layout/activity_question.xml
+--- a/app/src/main/res/layout/activity_question.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_question.xml	(date 1629406115217)
+@@ -13,11 +13,11 @@
+         android:layout_height="124dp"
+         android:layout_marginTop="64dp"
+         android:background="@drawable/input"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:fontFamily="@font/calibrillight"
+         android:gravity="center|left"
+         android:textColor="#000000"
+-        android:textSize="28sp"
+-        app:autoSizeTextType="uniform"
++        android:textSize="20sp"
++
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+@@ -29,7 +29,7 @@
+         android:layout_marginTop="20dp"
+         android:layout_weight="1"
+         android:background="@drawable/button"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:fontFamily="@font/calibrillight"
+         android:textColor="#000000"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+@@ -42,7 +42,7 @@
+         android:layout_marginTop="20dp"
+         android:layout_weight="1"
+         android:background="@drawable/button"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:fontFamily="@font/calibrillight"
+         android:textColor="#000000"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+@@ -55,7 +55,7 @@
+         android:layout_marginTop="20dp"
+         android:layout_weight="1"
+         android:background="@drawable/button"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:fontFamily="@font/calibrillight"
+         android:textColor="#000000"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+@@ -67,7 +67,7 @@
+         android:layout_height="70dp"
+         android:layout_marginTop="24dp"
+         android:background="@drawable/button"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:fontFamily="@font/calibrillight"
+         android:textColor="#000000"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\">\r\n    <background android:drawable=\"@drawable/ic_launcher_background\"/>\r\n    <foreground android:drawable=\"@mipmap/ic_launcher_foreground\"/>\r\n</adaptive-icon>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml b/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+--- a/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1629403633919)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background"/>
++    <background android:drawable="@color/ic_launcher_background"/>
+     <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+ </adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_cloud_computing.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".cloud_computing\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backc3\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/aws\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"152dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/aws\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/ibm_cloud\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/azure\"\r\n        app:srcCompat=\"@drawable/ibmcloud\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/azure\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"152dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/azure\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/google_cloud\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/aws\"\r\n        app:srcCompat=\"@drawable/gcloud\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_cloud_computing.xml b/app/src/main/res/layout/activity_cloud_computing.xml
+--- a/app/src/main/res/layout/activity_cloud_computing.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_cloud_computing.xml	(date 1629407560535)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -26,6 +27,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="152dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/aws" />
+@@ -35,6 +37,7 @@
+         android:layout_width="166dp"
+         android:layout_height="166dp"
+         android:layout_marginTop="48dp"
++        android:foreground="?android:selectableItemBackground"
+         android:layout_marginEnd="32dp"
+         android:layout_marginRight="32dp"
+         app:layout_constraintEnd_toEndOf="parent"
+@@ -47,6 +50,7 @@
+         android:layout_height="166dp"
+         android:layout_marginTop="152dp"
+         android:layout_marginEnd="32dp"
++        android:foreground="?android:selectableItemBackground"
+         android:layout_marginRight="32dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -59,6 +63,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="48dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/aws"
+         app:srcCompat="@drawable/gcloud" />
+Index: app/src/main/res/layout/activity_category_choice.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Category_choice\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backc\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView18\"\r\n        android:layout_width=\"388dp\"\r\n        android:layout_height=\"81dp\"\r\n        android:layout_marginTop=\"84dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Choose your Category\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textSize=\"30sp\"\r\n        android:textStyle=\"bold\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:text=\"Choose your Category\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/programming_languages\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"32dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:enabled=\"true\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Programming \\nLanguages\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView18\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/networking_and_security\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Networking and security\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/programming_languages\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/cloud_computing\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Cloud Computing\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/networking_and_security\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/front_end\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"32dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:layout_marginRight=\"8dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Front End\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView18\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/database\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"12dp\"\r\n        android:layout_marginRight=\"12dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Database\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/front_end\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/trend_of_the_generation\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"12dp\"\r\n        android:layout_marginRight=\"12dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Trend of the \\ngeneration\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/database\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_category_choice.xml b/app/src/main/res/layout/activity_category_choice.xml
+--- a/app/src/main/res/layout/activity_category_choice.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_category_choice.xml	(date 1629407560621)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.project1\">\r\n\r\n    <uses-permission android:name=\"android.permission.INTERNET\" />\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"qzicom\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/AppTheme\">\r\n        <activity android:name=\".category_result\"></activity>\r\n        <activity android:name=\".trend_of_the_generation\" />\r\n        <activity android:name=\".cloud_computing\" />\r\n        <activity android:name=\".Databases\" />\r\n        <activity android:name=\".networking_and_security\" />\r\n        <activity android:name=\".front_end\" />\r\n        <activity android:name=\".programming_languages\" />\r\n        <activity android:name=\".Category_choice\" />\r\n        <activity android:name=\".Final_Result\" />\r\n        <activity android:name=\".Quiz_Result\" />\r\n        <activity android:name=\".Question\" />\r\n        <activity android:name=\".Profile\" />\r\n        <activity android:name=\".Welcome\" />\r\n        <activity android:name=\".Register\" />\r\n        <activity android:name=\".MainActivity\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n\r\n        <meta-data\r\n            android:name=\"preloaded_fonts\"\r\n            android:resource=\"@array/preloaded_fonts\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/AndroidManifest.xml	(date 1629407560542)
+@@ -7,7 +7,7 @@
+     <application
+         android:allowBackup="true"
+         android:icon="@mipmap/ic_launcher"
+-        android:label="qzicom"
++        android:label="Where do you stand ?"
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1628699136051)
++++ b/.idea/compiler.xml	(date 1628699136051)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="11" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView19\"\r\n        android:layout_width=\"397dp\"\r\n        android:layout_height=\"81dp\"\r\n        android:layout_marginLeft=\"20dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"How ready are you?\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textSize=\"40sp\"\r\n        android:textStyle=\"normal|bold\"\r\n        app:autoSizeTextType=\"none\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView20\"\r\n        android:layout_width=\"229dp\"\r\n        android:layout_height=\"38dp\"\r\n        android:layout_marginStart=\"22dp\"\r\n        android:layout_marginLeft=\"22dp\"\r\n        android:layout_marginTop=\"108dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Test yourself !\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/Main_user\"\r\n        android:layout_width=\"250dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"80dp\"\r\n        android:layout_marginLeft=\"80dp\"\r\n        android:layout_marginTop=\"196dp\"\r\n        android:autofillHints=\"\"\r\n        android:background=\"@drawable/input\"\r\n        android:ems=\"10\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:hint=\"@string/enter_email\"\r\n        android:inputType=\"textPersonName\"\r\n        android:textColor=\"#000000\"\r\n        android:textColorHint=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/Main_password\"\r\n        android:layout_width=\"250dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"80dp\"\r\n        android:layout_marginLeft=\"80dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:autofillHints=\"\"\r\n        android:background=\"@drawable/input\"\r\n        android:ems=\"10\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:hint=\"@string/enter_password\"\r\n        android:inputType=\"textPassword\"\r\n        android:textColor=\"#000000\"\r\n        android:textColorHint=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Main_user\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/Main_login\"\r\n        android:layout_width=\"122dp\"\r\n        android:layout_height=\"52dp\"\r\n        android:layout_marginStart=\"72dp\"\r\n        android:layout_marginLeft=\"72dp\"\r\n        android:layout_marginTop=\"64dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:text=\"Login\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Main_password\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/Main_Register\"\r\n        android:layout_width=\"122dp\"\r\n        android:layout_height=\"52dp\"\r\n        android:layout_marginTop=\"64dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:text=\"@string/register\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.423\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/Main_login\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Main_password\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1629404905020)
+@@ -15,7 +15,7 @@
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="48dp"
+         android:fontFamily="@font/nunito_sans_extralight"
+-        android:text="How ready are you?"
++        android:text="Where do you stand?"
+         android:textColor="#FFFFFF"
+         android:textSize="40sp"
+         android:textStyle="normal|bold"
+Index: app/src/main/res/layout-v26/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <EditText\r\n        android:id=\"@+id/Main_password\"\r\n        android:layout_width=\"250dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"64dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:autofillHints=\"\"\r\n        android:background=\"@drawable/input\"\r\n        android:ems=\"10\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:hint=\"@string/enter_password\"\r\n        android:inputType=\"textPassword\"\r\n        android:textColor=\"#000000\"\r\n        android:textColorHint=\"#FF7A7A7A\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/main_email\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/Main_login\"\r\n        android:layout_width=\"122dp\"\r\n        android:layout_height=\"52dp\"\r\n        android:layout_marginStart=\"64dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:text=\"@string/login\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Main_password\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/Main_Register\"\r\n        android:layout_width=\"122dp\"\r\n        android:layout_height=\"52dp\"\r\n        android:layout_marginStart=\"48dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:text=\"@string/register\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/Main_login\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Main_password\" />\r\n\r\n    <ProgressBar\r\n        android:id=\"@+id/progressBar\"\r\n        style=\"?android:attr/progressBarStyle\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"184dp\"\r\n        android:layout_marginTop=\"128dp\"\r\n        android:visibility=\"invisible\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Main_password\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/main_email\"\r\n        android:layout_width=\"250dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"64dp\"\r\n        android:layout_marginTop=\"196dp\"\r\n        android:autofillHints=\"\"\r\n        android:background=\"@drawable/input\"\r\n        android:ems=\"10\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:hint=\"@string/enter_email\"\r\n        android:inputType=\"textEmailAddress\"\r\n        android:textColor=\"#000000\"\r\n        android:textColorHint=\"#7A7A7A\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView\"\r\n        android:layout_width=\"397dp\"\r\n        android:layout_height=\"81dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"60dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"qzicom\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textSize=\"40sp\"\r\n        android:textStyle=\"normal|bold\"\r\n        app:autoSizeTextType=\"none\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView9\"\r\n        android:layout_width=\"229dp\"\r\n        android:layout_height=\"38dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginTop=\"120dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Test yourself !\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-v26/activity_main.xml b/app/src/main/res/layout-v26/activity_main.xml
+--- a/app/src/main/res/layout-v26/activity_main.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout-v26/activity_main.xml	(date 1629406970279)
+@@ -64,7 +64,7 @@
+         android:layout_width="250dp"
+         android:layout_height="59dp"
+         android:layout_marginStart="64dp"
+-        android:layout_marginTop="196dp"
++        android:layout_marginTop="250dp"
+         android:autofillHints=""
+         android:background="@drawable/input"
+         android:ems="10"
+@@ -78,30 +78,36 @@
+ 
+     <TextView
+         android:id="@+id/textView"
+-        android:layout_width="397dp"
+-        android:layout_height="81dp"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="60dp"
+         android:fontFamily="@font/nunito_sans_extralight"
+-        android:text="qzicom"
++        android:text="Where do you stand?"
+         android:textColor="#FFFFFF"
+-        android:textSize="40sp"
++        android:textSize="35sp"
++        android:gravity="center"
+         android:textStyle="normal|bold"
+         app:autoSizeTextType="none"
++        app:layout_constraintLeft_toLeftOf="parent"
++        app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+     <TextView
+         android:id="@+id/textView9"
+-        android:layout_width="229dp"
+-        android:layout_height="38dp"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="120dp"
+         android:fontFamily="@font/nunito_sans_extralight"
+-        android:text="Test yourself !"
++        android:text=" Test yourself !"
++        app:layout_constraintLeft_toLeftOf="parent"
++        app:layout_constraintRight_toRightOf="parent"
+         android:textColor="#FFFFFF"
+-        app:autoSizeTextType="uniform"
++        android:textSize="20sp"
++        android:gravity="center"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+Index: app/src/main/res/layout-v4/activity_profile.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Profile\"\r\n    android:background=\"@drawable/backgroundlogin\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backp\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button_red\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/profile_email\"\r\n        android:layout_width=\"364dp\"\r\n        android:layout_height=\"48dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textIsSelectable=\"false\"\r\n        android:textSize=\"30sp\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.489\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/profile_name\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/profile_name\"\r\n        android:layout_width=\"355dp\"\r\n        android:layout_height=\"48dp\"\r\n        android:layout_marginTop=\"376dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:gravity=\"center\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textSize=\"30sp\"\r\n        app:autoSizeTextType=\"none\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/pic_male\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"140dp\"\r\n        android:layout_marginLeft=\"140dp\"\r\n        android:layout_marginTop=\"264dp\"\r\n        android:contentDescription=\"@string/todo\"\r\n        android:visibility=\"gone\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:src=\"@tools:sample/avatars\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/pic_female\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"140dp\"\r\n        android:layout_marginLeft=\"140dp\"\r\n        android:layout_marginTop=\"264dp\"\r\n        android:contentDescription=\"@string/todo\"\r\n        android:visibility=\"gone\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:src=\"@tools:sample/avatars[4]\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView\"\r\n        android:layout_width=\"129dp\"\r\n        android:layout_height=\"123dp\"\r\n        android:layout_marginStart=\"140dp\"\r\n        android:layout_marginLeft=\"140dp\"\r\n        android:layout_marginTop=\"192dp\"\r\n        android:contentDescription=\"@string/todo\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/profile_white\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-v4/activity_profile.xml b/app/src/main/res/layout-v4/activity_profile.xml
+--- a/app/src/main/res/layout-v4/activity_profile.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout-v4/activity_profile.xml	(date 1639995438164)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -21,14 +22,15 @@
+ 
+     <TextView
+         android:id="@+id/profile_email"
+-        android:layout_width="364dp"
+-        android:layout_height="48dp"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:fontFamily="@font/nunito_sans_extralight"
+         android:textColor="#FFFFFF"
+         android:textIsSelectable="false"
+         android:textSize="30sp"
+         app:autoSizeTextType="uniform"
++        android:gravity="center"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.489"
+         app:layout_constraintStart_toStartOf="parent"
+Index: app/src/main/res/layout/activity_programming_languages.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".programming_languages\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backp2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/c\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"152dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/c\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/cpp\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"152dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/cpp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/java\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/c\"\r\n        app:srcCompat=\"@drawable/java\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/python\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/cpp\"\r\n        app:srcCompat=\"@drawable/python\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_programming_languages.xml b/app/src/main/res/layout/activity_programming_languages.xml
+--- a/app/src/main/res/layout/activity_programming_languages.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_programming_languages.xml	(date 1629407560636)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -26,6 +27,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="152dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/c" />
+@@ -37,6 +39,7 @@
+         android:layout_marginTop="152dp"
+         android:layout_marginEnd="32dp"
+         android:layout_marginRight="32dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/cpp" />
+@@ -48,6 +51,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="48dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/c"
+         app:srcCompat="@drawable/java" />
+@@ -59,6 +63,7 @@
+         android:layout_marginTop="48dp"
+         android:layout_marginEnd="32dp"
+         android:layout_marginRight="32dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/cpp"
+         app:srcCompat="@drawable/python" />
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"delegatedBuild\" value=\"false\" />\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/.idea/gradle.xml	(date 1628698296484)
+@@ -5,7 +5,7 @@
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+         <option name="delegatedBuild" value="false" />
+-        <option name="testRunner" value="PLATFORM" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="modules">
+Index: app/src/main/res/layout/activity_category_result.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".category_result\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backc2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/networking_and_security2\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Networking and security\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/cloud_computing2\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/trend_of_the_generation2\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"12dp\"\r\n        android:layout_marginRight=\"12dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Trend of the \\ngeneration\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/database2\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/front_end2\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"176dp\"\r\n        android:layout_marginEnd=\"12dp\"\r\n        android:layout_marginRight=\"12dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Front End\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/cloud_computing2\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Cloud Computing\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/programming_languages2\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/programming_languages2\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"176dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Programming \\nLanguages\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/database2\"\r\n        android:layout_width=\"190dp\"\r\n        android:layout_height=\"71dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"12dp\"\r\n        android:layout_marginRight=\"12dp\"\r\n        android:background=\"@drawable/button\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Database\"\r\n        android:textColor=\"#000000\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/front_end2\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_category_result.xml b/app/src/main/res/layout/activity_category_result.xml
+--- a/app/src/main/res/layout/activity_category_result.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_category_result.xml	(date 1629407560539)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+Index: app/src/main/res/layout/activity_profile.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Profile\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/pic_male\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"140dp\"\r\n        android:layout_marginLeft=\"140dp\"\r\n        android:layout_marginTop=\"264dp\"\r\n        android:contentDescription=\"@string/todo\"\r\n        android:visibility=\"invisible\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:src=\"@tools:sample/avatars\" tools:targetApi=\"donut\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/pic_female\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"140dp\"\r\n        android:layout_marginLeft=\"140dp\"\r\n        android:layout_marginTop=\"264dp\"\r\n        android:contentDescription=\"@string/todo\"\r\n        android:visibility=\"invisible\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:src=\"@tools:sample/avatars[4]\"\r\n        tools:targetApi=\"donut\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/profile_name\"\r\n        android:layout_width=\"98dp\"\r\n        android:layout_height=\"19dp\"\r\n        android:layout_marginStart=\"156dp\"\r\n        android:layout_marginLeft=\"156dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:text=\"@string/enter_name\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/pic_male\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/profile_email\"\r\n        android:layout_width=\"96dp\"\r\n        android:layout_height=\"21dp\"\r\n        android:layout_marginStart=\"156dp\"\r\n        android:layout_marginLeft=\"156dp\"\r\n        android:layout_marginTop=\"28dp\"\r\n        android:text=\"@string/enter_email\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/profile_name\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_profile.xml b/app/src/main/res/layout/activity_profile.xml
+--- a/app/src/main/res/layout/activity_profile.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_profile.xml	(date 1629403812212)
+@@ -41,6 +41,7 @@
+         android:layout_marginLeft="156dp"
+         android:layout_marginTop="48dp"
+         android:text="@string/enter_name"
++        android:gravity="center"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/pic_male" />
+ 
+@@ -52,6 +53,7 @@
+         android:layout_marginLeft="156dp"
+         android:layout_marginTop="28dp"
+         android:text="@string/enter_email"
++        android:gravity="center"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/profile_name" />
+ 
+Index: app/src/main/java/com/example/project1/Final_Result.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.project1;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;\r\nimport android.widget.Toast;\r\n\r\nimport com.google.android.gms.tasks.OnCompleteListener;\r\nimport com.google.android.gms.tasks.Task;\r\nimport com.google.firebase.auth.FirebaseAuth;\r\nimport com.google.firebase.firestore.DocumentReference;\r\nimport com.google.firebase.firestore.DocumentSnapshot;\r\nimport com.google.firebase.firestore.EventListener;\r\nimport com.google.firebase.firestore.FirebaseFirestore;\r\nimport com.google.firebase.firestore.FirebaseFirestoreException;\r\n\r\nimport javax.annotation.Nullable;\r\n\r\npublic class Final_Result extends AppCompatActivity {\r\n\r\n    TextView date,time,correct,wrong,total,averg;\r\n    ImageView back;\r\n    String Uid;\r\n    String res_cat;\r\n    int t,t1;\r\n    float avg,total1=0;\r\n    FirebaseAuth fAuth;\r\n    FirebaseFirestore fStore;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_final__result);\r\n        date=(TextView)findViewById(R.id.Date);\r\n        correct=(TextView)findViewById(R.id.Correct_Answers);\r\n        wrong=(TextView)findViewById(R.id.Wrong_Answers);\r\n        total=(TextView)findViewById(R.id.Total);\r\n        time=(TextView)findViewById(R.id.Time);\r\n        averg=(TextView)findViewById(R.id.Average);\r\n        back=(ImageView)findViewById(R.id.backr);\r\n\r\n        fAuth=FirebaseAuth.getInstance();\r\n        fStore=FirebaseFirestore.getInstance();\r\n        Intent i=getIntent();\r\n        res_cat=i.getStringExtra(\"act\");\r\n        Uid = fAuth.getCurrentUser().getUid();\r\n        final DocumentReference dr = fStore.collection(\"Users\").document(Uid);\r\n        dr.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {\r\n            @Override\r\n            public void onComplete(@NonNull Task<DocumentSnapshot> task) {\r\n                if (task.isSuccessful()) {\r\n                    DocumentSnapshot document = task.getResult();\r\n                    t = Integer.parseInt(document.getString(res_cat));\r\n                    //  Toast.makeText(Final_Result.this, String.valueOf(t), Toast.LENGTH_SHORT).show();\r\n\r\n                    for (int i = 1; i <= t; i++) {\r\n                        String win = String.valueOf(i);\r\n                        DocumentReference documentReference = fStore.collection(\"Users\").document(Uid).collection(res_cat).document(win);\r\n                        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {\r\n                            @Override\r\n                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {\r\n                                if (task.isSuccessful()) {\r\n                                    DocumentSnapshot doc = task.getResult();\r\n                                    date.append(\"\\n\" + doc.getString(\"Date\"));\r\n                                    time.append(\"\\n\" + doc.getString(\"Time\"));\r\n                                    correct.append(\"\\n\" + doc.getString(\"Correct\"));\r\n                                    wrong.append(\"\\n\" + doc.getString(\"Wrong\"));\r\n                                    total1 += Integer.parseInt(doc.getString(\"Correct\"));\r\n                                    total.append(\"\\n\" + String.valueOf((Float.parseFloat(doc.getString(\"Correct\")) / 20) * 100) + \"%\");\r\n\r\n                                    avg = ((total1 / t) / 20) * 100;\r\n                                    averg.setText(String.valueOf(avg) + \"%\");\r\n                                }\r\n                            }\r\n\r\n                        });\r\n                    }\r\n                }\r\n            }\r\n        });\r\n        back.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                startActivity(new Intent(getApplicationContext(),Welcome.class));\r\n            }\r\n        });\r\n\r\n        }\r\n    }\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/project1/Final_Result.java b/app/src/main/java/com/example/project1/Final_Result.java
+--- a/app/src/main/java/com/example/project1/Final_Result.java	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/java/com/example/project1/Final_Result.java	(date 1629407957016)
+@@ -71,10 +71,10 @@
+                                     correct.append("\n" + doc.getString("Correct"));
+                                     wrong.append("\n" + doc.getString("Wrong"));
+                                     total1 += Integer.parseInt(doc.getString("Correct"));
+-                                    total.append("\n" + String.valueOf((Float.parseFloat(doc.getString("Correct")) / 20) * 100) + "%");
++                                    total.append("\n" + String.format("%.2f",(Float.parseFloat(doc.getString("Correct")) / 20) * 100) + "%");
+ 
+                                     avg = ((total1 / t) / 20) * 100;
+-                                    averg.setText(String.valueOf(avg) + "%");
++                                    averg.setText(String.format("%.2f",avg) + "%");
+                                 }
+                             }
+ 
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/.idea/misc.xml	(date 1629408181985)
+@@ -1,9 +1,37 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="DesignSurface">
++    <option name="filePathToZoomLevelMap">
++      <map>
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout-v4/activity_profile.xml" value="0.264" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_category_choice.xml" value="0.2625" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_category_result.xml" value="0.264" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_cloud_computing.xml" value="0.15416666666666667" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_databases.xml" value="0.15416666666666667" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_final__result.xml" value="0.176" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_front_end.xml" value="0.15416666666666667" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_main.xml" value="0.2" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_networking_and_security.xml" value="0.2625" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_profile.xml" value="0.536" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_programming_languages.xml" value="0.2625" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_question.xml" value="0.12685185185185185" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_quiz__result.xml" value="0.2625" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_trend_of_the_generation.xml" value="0.2625" />
++        <entry key="..\:/Users/Shubhankar/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_welcome.xml" value="0.136" />
++      </map>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+     <option name="id" value="Android" />
+   </component>
++  <component name="VisualizationToolProject">
++    <option name="state">
++      <ProjectState>
++        <option name="scale" value="0.2" />
++      </ProjectState>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_front_end.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".front_end\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backc5\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/html\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/html\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/css\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/css\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/js\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/html\"\r\n        app:srcCompat=\"@drawable/js\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_front_end.xml b/app/src/main/res/layout/activity_front_end.xml
+--- a/app/src/main/res/layout/activity_front_end.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_front_end.xml	(date 1629407560531)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -26,6 +27,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="156dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/html" />
+@@ -37,6 +39,7 @@
+         android:layout_marginTop="156dp"
+         android:layout_marginEnd="32dp"
+         android:layout_marginRight="32dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/css" />
+@@ -48,6 +51,7 @@
+         android:layout_marginTop="48dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintTop_toBottomOf="@+id/html"
+         app:srcCompat="@drawable/js" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_trend_of_the_generation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".trend_of_the_generation\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backp3\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/AI\"\r\n        android:layout_width=\"160dp\"\r\n        android:layout_height=\"160dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/ai\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/IOT\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/AI\"\r\n        app:srcCompat=\"@drawable/iot\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_trend_of_the_generation.xml b/app/src/main/res/layout/activity_trend_of_the_generation.xml
+--- a/app/src/main/res/layout/activity_trend_of_the_generation.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_trend_of_the_generation.xml	(date 1629407560639)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -24,6 +25,7 @@
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         android:layout_marginTop="156dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -34,6 +36,7 @@
+         android:layout_width="166dp"
+         android:layout_height="166dp"
+         android:layout_marginTop="48dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/AI"
+Index: app/src/main/res/layout/activity_networking_and_security.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".networking_and_security\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backc6\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/networking\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/nerwork\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/security\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/networking\"\r\n        app:srcCompat=\"@drawable/security\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_networking_and_security.xml b/app/src/main/res/layout/activity_networking_and_security.xml
+--- a/app/src/main/res/layout/activity_networking_and_security.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_networking_and_security.xml	(date 1629407560625)
+@@ -15,6 +15,7 @@
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
+         android:contentDescription="@string/welcome"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/back_button" />
+@@ -24,6 +25,7 @@
+         android:layout_width="166dp"
+         android:layout_height="166dp"
+         android:layout_marginTop="156dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+@@ -36,6 +38,7 @@
+         android:layout_marginTop="48dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintTop_toBottomOf="@+id/networking"
+         app:srcCompat="@drawable/security" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_final__result.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Final_Result\"\r\n    android:background=\"@drawable/backgroundlogin\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backr\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button_red\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/Total\"\r\n        android:layout_width=\"62dp\"\r\n        android:layout_height=\"300dp\"\r\n        android:layout_marginStart=\"4dp\"\r\n        android:layout_marginLeft=\"4dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:gravity=\"center|top\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/Wrong_Answers\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView14\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/Time\"\r\n        android:layout_width=\"83dp\"\r\n        android:layout_height=\"300dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:gravity=\"center|top\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/Date\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView6\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/Correct_Answers\"\r\n        android:layout_width=\"62dp\"\r\n        android:layout_height=\"300dp\"\r\n        android:layout_marginStart=\"4dp\"\r\n        android:layout_marginLeft=\"4dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:gravity=\"center|top\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/Time\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView7\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/Wrong_Answers\"\r\n        android:layout_width=\"62dp\"\r\n        android:layout_height=\"300dp\"\r\n        android:layout_marginStart=\"4dp\"\r\n        android:layout_marginLeft=\"4dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:gravity=\"center|top\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/Correct_Answers\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView8\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView5\"\r\n        android:layout_width=\"59dp\"\r\n        android:layout_height=\"41dp\"\r\n        android:layout_marginStart=\"36dp\"\r\n        android:layout_marginLeft=\"36dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"@string/date\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:autoSizeTextType=\"none\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView6\"\r\n        android:layout_width=\"59dp\"\r\n        android:layout_height=\"41dp\"\r\n        android:layout_marginStart=\"24dp\"\r\n        android:layout_marginLeft=\"24dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"@string/time\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/textView5\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView7\"\r\n        android:layout_width=\"62dp\"\r\n        android:layout_height=\"41dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"@string/correct_answers\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/textView6\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView8\"\r\n        android:layout_width=\"59dp\"\r\n        android:layout_height=\"41dp\"\r\n        android:layout_marginStart=\"4dp\"\r\n        android:layout_marginLeft=\"4dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"@string/wrong_answers\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/textView7\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/Date\"\r\n        android:layout_width=\"83dp\"\r\n        android:layout_height=\"300dp\"\r\n        android:layout_marginStart=\"24dp\"\r\n        android:layout_marginLeft=\"24dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:gravity=\"center|top\"\r\n        android:scrollbarAlwaysDrawVerticalTrack=\"true\"\r\n        android:scrollbarStyle=\"outsideInset\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView5\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView14\"\r\n        android:layout_width=\"59dp\"\r\n        android:layout_height=\"41dp\"\r\n        android:layout_marginStart=\"12dp\"\r\n        android:layout_marginLeft=\"12dp\"\r\n        android:layout_marginTop=\"156dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"@string/total\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/textView8\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/Average\"\r\n        android:layout_width=\"200dp\"\r\n        android:layout_height=\"19dp\"\r\n        android:layout_marginTop=\"4dp\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/average\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Time\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/average\"\r\n        android:layout_width=\"117dp\"\r\n        android:layout_height=\"19dp\"\r\n        android:layout_marginStart=\"24dp\"\r\n        android:layout_marginLeft=\"24dp\"\r\n        android:layout_marginTop=\"4dp\"\r\n        android:text=\"@string/average_score\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/Time\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView17\"\r\n        android:layout_width=\"280dp\"\r\n        android:layout_height=\"73dp\"\r\n        android:layout_marginStart=\"64dp\"\r\n        android:layout_marginLeft=\"64dp\"\r\n        android:layout_marginTop=\"52dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"Result Report\"\r\n        android:textColor=\"#E95D5D\"\r\n        android:textStyle=\"bold\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_final__result.xml b/app/src/main/res/layout/activity_final__result.xml
+--- a/app/src/main/res/layout/activity_final__result.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_final__result.xml	(date 1629407560617)
+@@ -14,6 +14,7 @@
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/welcome"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+Index: app/src/main/res/layout/activity_welcome.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Welcome\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/logout\"\r\n        android:layout_width=\"175dp\"\r\n        android:layout_height=\"175dp\"\r\n        android:layout_marginTop=\"32dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:contentDescription=\"@string/logout\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"1.0\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/stats\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/user\"\r\n        app:srcCompat=\"@drawable/logoutf\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/quiz\"\r\n        android:layout_width=\"175dp\"\r\n        android:layout_height=\"175dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"176dp\"\r\n        android:contentDescription=\"@string/quiz\"\r\n        app:layout_constraintEnd_toStartOf=\"@+id/user\"\r\n        app:layout_constraintHorizontal_bias=\"0.425\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/quizf\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/user\"\r\n        android:layout_width=\"175dp\"\r\n        android:layout_height=\"175dp\"\r\n        android:layout_marginTop=\"176dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:contentDescription=\"@string/user\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/userf\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/stats\"\r\n        android:layout_width=\"175dp\"\r\n        android:layout_height=\"175dp\"\r\n        android:layout_marginStart=\"28dp\"\r\n        android:layout_marginLeft=\"28dp\"\r\n        android:layout_marginTop=\"32dp\"\r\n        android:contentDescription=\"@string/results\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/quiz\"\r\n        app:srcCompat=\"@drawable/statsf\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView11\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginBottom=\"20dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"@string/quiz\"\r\n        android:textColor=\"@color/grey\"\r\n        android:textColorHighlight=\"#FFFFFF\"\r\n        android:textSize=\"25sp\"\r\n        app:layout_constraintBottom_toBottomOf=\"@+id/quiz\"\r\n        app:layout_constraintEnd_toEndOf=\"@+id/quiz\"\r\n        app:layout_constraintHorizontal_bias=\"0.48\"\r\n        app:layout_constraintStart_toStartOf=\"@+id/quiz\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView10\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginBottom=\"20dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"@string/profile\"\r\n        android:textColor=\"@color/grey\"\r\n        android:textSize=\"25sp\"\r\n        app:layout_constraintBottom_toBottomOf=\"@+id/user\"\r\n        app:layout_constraintEnd_toEndOf=\"@+id/user\"\r\n        app:layout_constraintHorizontal_bias=\"0.72\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/textView11\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView15\"\r\n        android:layout_width=\"225dp\"\r\n        android:layout_height=\"76dp\"\r\n        android:layout_marginStart=\"28dp\"\r\n        android:layout_marginLeft=\"28dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"@string/dashboard\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textSize=\"30sp\"\r\n        android:textStyle=\"bold\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:text=\"Dashboard\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView16\"\r\n        android:layout_width=\"136dp\"\r\n        android:layout_height=\"31dp\"\r\n        android:layout_marginStart=\"30dp\"\r\n        android:layout_marginLeft=\"30dp\"\r\n        android:layout_marginTop=\"100dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"@string/welcome_back\"\r\n        android:textColor=\"#FFFFFF\"\r\n        android:textSize=\"30sp\"\r\n        app:autoSizeTextType=\"uniform\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        tools:text=\"Welcome back\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView12\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginBottom=\"21dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"@string/results\"\r\n        android:textColor=\"@color/grey\"\r\n        android:textSize=\"25sp\"\r\n        app:layout_constraintBottom_toBottomOf=\"@+id/stats\"\r\n        app:layout_constraintEnd_toEndOf=\"@+id/stats\"\r\n        app:layout_constraintStart_toStartOf=\"@+id/stats\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView13\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginBottom=\"20dp\"\r\n        android:fontFamily=\"@font/nunito_sans_extralight\"\r\n        android:text=\"@string/logout\"\r\n        android:textColor=\"@color/grey\"\r\n        android:textColorHighlight=\"@color/red\"\r\n        android:textSize=\"25sp\"\r\n        app:layout_constraintBottom_toBottomOf=\"@+id/logout\"\r\n        app:layout_constraintEnd_toEndOf=\"@+id/logout\"\r\n        app:layout_constraintHorizontal_bias=\"0.7\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/textView12\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_welcome.xml b/app/src/main/res/layout/activity_welcome.xml
+--- a/app/src/main/res/layout/activity_welcome.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_welcome.xml	(date 1629407560632)
+@@ -9,84 +9,93 @@
+ 
+     <ImageView
+         android:id="@+id/logout"
+-        android:layout_width="175dp"
+-        android:layout_height="175dp"
+-        android:layout_marginTop="32dp"
++        android:layout_width="150dp"
++        android:layout_height="150dp"
++        android:layout_marginTop="48dp"
+         android:layout_marginEnd="16dp"
+         android:layout_marginRight="16dp"
+         android:contentDescription="@string/logout"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintHorizontal_bias="0.82"
+         app:layout_constraintStart_toEndOf="@+id/stats"
+         app:layout_constraintTop_toBottomOf="@+id/user"
+-        app:srcCompat="@drawable/logoutf" />
++        app:srcCompat="@drawable/_124045_logout_icon" />
+ 
+     <ImageView
+         android:id="@+id/quiz"
+-        android:layout_width="175dp"
+-        android:layout_height="175dp"
++        android:layout_width="150dp"
++        android:layout_height="150dp"
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+-        android:layout_marginTop="176dp"
++        android:layout_marginTop="180dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/quiz"
+         app:layout_constraintEnd_toStartOf="@+id/user"
+-        app:layout_constraintHorizontal_bias="0.425"
++        app:layout_constraintHorizontal_bias="0.168"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:srcCompat="@drawable/quizf" />
++        app:srcCompat="@drawable/brain" />
+ 
+     <ImageView
+         android:id="@+id/user"
+-        android:layout_width="175dp"
+-        android:layout_height="175dp"
+-        android:layout_marginTop="176dp"
+-        android:layout_marginEnd="16dp"
+-        android:layout_marginRight="16dp"
++        android:layout_width="150dp"
++        android:layout_height="150dp"
++        android:layout_marginTop="180dp"
++        android:layout_marginEnd="28dp"
++        android:layout_marginRight="28dp"
+         android:contentDescription="@string/user"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:srcCompat="@drawable/userf" />
++        app:srcCompat="@drawable/userwb" />
+ 
+     <ImageView
+         android:id="@+id/stats"
+-        android:layout_width="175dp"
+-        android:layout_height="175dp"
++        android:layout_width="150dp"
++        android:layout_height="150dp"
+         android:layout_marginStart="28dp"
+         android:layout_marginLeft="28dp"
+-        android:layout_marginTop="32dp"
++        android:layout_marginTop="48dp"
++        android:foreground="?android:selectableItemBackground"
+         android:contentDescription="@string/results"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/quiz"
+-        app:srcCompat="@drawable/statsf" />
++        app:srcCompat="@drawable/check1" />
+ 
+     <TextView
+         android:id="@+id/textView11"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginBottom="20dp"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:layout_width="45dp"
++        android:layout_height="30dp"
++        android:fontFamily="@font/calibrillight"
+         android:text="@string/quiz"
+-        android:textColor="@color/grey"
++        android:textColor="#F9F9F9"
+         android:textColorHighlight="#FFFFFF"
+-        android:textSize="25sp"
+-        app:layout_constraintBottom_toBottomOf="@+id/quiz"
++        android:textSize="20sp"
++        android:gravity="center"
++        android:layout_marginTop="4dp"
++        app:layout_constraintBottom_toTopOf="@+id/stats"
+         app:layout_constraintEnd_toEndOf="@+id/quiz"
+-        app:layout_constraintHorizontal_bias="0.48"
+-        app:layout_constraintStart_toStartOf="@+id/quiz" />
++        app:layout_constraintHorizontal_bias="0.533"
++        app:layout_constraintStart_toStartOf="@+id/quiz"
++        app:layout_constraintTop_toTopOf="@+id/quiz"
++        app:layout_constraintVertical_bias="0.916" />
+ 
+     <TextView
+         android:id="@+id/textView10"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginBottom="20dp"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:layout_width="67dp"
++        android:layout_height="30dp"
++        android:layout_marginTop="4dp"
++        android:fontFamily="@font/calibrillight"
++        android:gravity="center"
+         android:text="@string/profile"
+-        android:textColor="@color/grey"
+-        android:textSize="25sp"
+-        app:layout_constraintBottom_toBottomOf="@+id/user"
++        android:textColor="#F9F9F9"
++        android:textSize="20sp"
+         app:layout_constraintEnd_toEndOf="@+id/user"
+-        app:layout_constraintHorizontal_bias="0.72"
+-        app:layout_constraintStart_toEndOf="@+id/textView11" />
++        app:layout_constraintHorizontal_bias="0.506"
++
++        app:layout_constraintStart_toStartOf="@+id/user"
++        app:layout_constraintTop_toBottomOf="@+id/user" />
+ 
+     <TextView
+         android:id="@+id/textView15"
+@@ -124,29 +133,33 @@
+     <TextView
+         android:id="@+id/textView12"
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
++        android:layout_height="30dp"
+         android:layout_marginBottom="21dp"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:fontFamily="@font/calibrillight"
+         android:text="@string/results"
+-        android:textColor="@color/grey"
+-        android:textSize="25sp"
+-        app:layout_constraintBottom_toBottomOf="@+id/stats"
++        android:textColor="#F9F9F9"
++        android:textSize="20sp"
++        android:gravity="center"
++        android:layout_marginTop="4dp"
+         app:layout_constraintEnd_toEndOf="@+id/stats"
+-        app:layout_constraintStart_toStartOf="@+id/stats" />
++        app:layout_constraintStart_toStartOf="@+id/stats"
++        app:layout_constraintTop_toBottomOf="@+id/stats"
++        app:layout_constraintVertical_bias="0.0" />
+ 
+     <TextView
+         android:id="@+id/textView13"
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginBottom="20dp"
+-        android:fontFamily="@font/nunito_sans_extralight"
++        android:layout_height="30dp"
++        android:layout_marginTop="4dp"
++        android:fontFamily="@font/calibrillight"
++        android:gravity="center"
+         android:text="@string/logout"
+-        android:textColor="@color/grey"
++        android:textColor="#F9F9F9"
+         android:textColorHighlight="@color/red"
+-        android:textSize="25sp"
+-        app:layout_constraintBottom_toBottomOf="@+id/logout"
++        android:textSize="20sp"
+         app:layout_constraintEnd_toEndOf="@+id/logout"
+-        app:layout_constraintHorizontal_bias="0.7"
+-        app:layout_constraintStart_toEndOf="@+id/textView12" />
++        app:layout_constraintHorizontal_bias="0.737"
++        app:layout_constraintStart_toEndOf="@+id/textView12"
++        app:layout_constraintTop_toBottomOf="@+id/logout" />
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">ComQuiz</string>\r\n    <string name=\"register\">Register</string>\r\n    <string name=\"login\">Login</string>\r\n    <string name=\"enter_username\">Enter Username</string>\r\n    <string name=\"enter_password\">Enter Password</string>\r\n    <string name=\"confirm_password\">Confirm Password</string>\r\n    <string name=\"radiobutton\">RadioButton</string>\r\n    <string name=\"enter_email\">Enter Email</string>\r\n    <string name=\"male\">Male</string>\r\n    <string name=\"female\">Female</string>\r\n    <string name=\"welcome\">Welcome!</string>\r\n    <string name=\"logout\">Logout</string>\r\n    <string name=\"enter_name\">Enter Name</string>\r\n    <string name=\"test_your_knowledge\">Test Your Knowledge!</string>\r\n    <string name=\"already_have_an_account_click_here_to_login\">Already have an account? Click here to Login.</string>\r\n    <string name=\"quiz\">Quiz</string>\r\n    <string name=\"results\">Results</string>\r\n    <string name=\"profile\">Profile</string>\r\n    <string name=\"todo\">TODO</string>\r\n    <string name=\"what_is_this_question\">What is this question?</string>\r\n    <string name=\"option1\">option1</string>\r\n    <string name=\"option2\">option2</string>\r\n    <string name=\"option3\">option3</string>\r\n    <string name=\"option4\">option4</string>\r\n    <string name=\"total_questions\">Total Questions</string>\r\n    <string name=\"correct_answers\">Correct Answers</string>\r\n    <string name=\"wrong_answers\">Wrong Answers</string>\r\n    <string name=\"end_quiz\">End Quiz</string>\r\n    <string name=\"textview\">TextView</string>\r\n    <string name=\"date\">Date</string>\r\n    <string name=\"time\">Time</string>\r\n    <string name=\"cr\">Correct answers</string>\r\n    <string name=\"total\">Total</string>\r\n    <string name=\"val\">val</string>\r\n\r\n    <string name=\"average_score\">Average Score:</string>\r\n    <string name=\"user\">user</string>\r\n    <string name=\"dashboard\">Dashboard</string>\r\n    <string name=\"welcome_back\">Welcome Back</string>\r\n\r\n\r\n</resources>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/values/strings.xml	(date 1629407560628)
+@@ -1,5 +1,5 @@
+ <resources>
+-    <string name="app_name">ComQuiz</string>
++    <string name="app_name">Where do you stand</string>
+     <string name="register">Register</string>
+     <string name="login">Login</string>
+     <string name="enter_username">Enter Username</string>
+Index: app/src/main/res/layout/activity_databases.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Databases\"\r\n    android:background=\"@drawable/background1\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/backc4\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:contentDescription=\"@string/welcome\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/back_button\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/mongodb\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/sqlite\"\r\n        app:srcCompat=\"@drawable/mongodb\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/oracle\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"48dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/mysql\"\r\n        app:srcCompat=\"@drawable/oracledb\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/sqlite\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginTop=\"152dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/sqlite\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/mysql\"\r\n        android:layout_width=\"166dp\"\r\n        android:layout_height=\"166dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"152dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:srcCompat=\"@drawable/mysql\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_databases.xml b/app/src/main/res/layout/activity_databases.xml
+--- a/app/src/main/res/layout/activity_databases.xml	(revision 8fe5df711ba8d8c5d651cd9f7e00eb38873f6600)
++++ b/app/src/main/res/layout/activity_databases.xml	(date 1629407560405)
+@@ -15,6 +15,7 @@
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
+         android:contentDescription="@string/welcome"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/back_button" />
+@@ -26,6 +27,7 @@
+         android:layout_marginTop="48dp"
+         android:layout_marginEnd="32dp"
+         android:layout_marginRight="32dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/sqlite"
+         app:srcCompat="@drawable/mongodb" />
+@@ -37,6 +39,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="48dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/mysql"
+         app:srcCompat="@drawable/oracledb" />
+@@ -48,6 +51,7 @@
+         android:layout_marginTop="152dp"
+         android:layout_marginEnd="32dp"
+         android:layout_marginRight="32dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/sqlite" />
+@@ -59,6 +63,7 @@
+         android:layout_marginStart="32dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="152dp"
++        android:foreground="?android:selectableItemBackground"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/mysql" />
